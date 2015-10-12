@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CourseAssignment2(1)", "Cou
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "30946"
+		SlnRelativePath = "CourseAssignment2\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
