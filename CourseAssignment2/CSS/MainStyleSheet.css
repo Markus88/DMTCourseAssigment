@@ -1,2 +1,32 @@
-﻿body {
+﻿#header {
+    width: auto;
+    height: 300px;
+    align-items:center;
 }
+
+#buttonHeader{
+    width:auto;
+    height:30px;
+    background-color:#FF9933;
+}
+
+#leftBanner {
+    float:left;
+}
+#rightBanner {
+    float:right;
+}
+#section {
+    width:auto;
+    float:left;
+    padding:10px; 
+}
+#footer {
+    background-color:#FF9933;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+
+
