@@ -11,11 +11,48 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+     <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
         
-        </asp:ContentPlaceHolder>
-    </div>
+      <div id="wrapper"> 
+        
+         <div id="header">
+           <span class="headerSpan">
+              Welcome to DMT
+           </span>
+         </div>
+
+         <div id="container">
+            <div id="menu">
+              <div id="tree">
+                <asp:TreeView ID="TreeView1" DataSourceID="SiteMapDataSource1" runat="server" NodeIndent="15" ShowExpandCollapse="False" NodeStyle-CssClass="menunode" HoverNodeStyle-CssClass="menunodehover" SelectedNodeStyle-CssClass="menunodeselected" RootNodeStyle-CssClass="rootnode" ParentNodeStyle-CssClass="parentnode">
+                </asp:TreeView>
+              </div>
+              <div id="dropdown">
+                <asp:Menu ID="Menu1" DataSourceID="SiteMapDataSource1" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" CssClass="topmenu" StaticMenuItemStyle-CssClass="dropmenunode" DynamicMenuItemStyle-CssClass="dynamicmenunode" StaticEnableDefaultPopOutImage="False" StaticPopOutImageUrl="~/images/arrowdw.png" StaticHoverStyle-BackColor="#0219B0" StaticHoverStyle-ForeColor="White" StaticSelectedStyle-BackColor="#0219B0" DynamicHoverStyle-BackColor="#A1BBFF" DynamicHoverStyle-ForeColor="#0219B0" DynamicSelectedStyle-ForeColor="#0219B0">
+                </asp:Menu>
+              </div> 
+            </div>
+          
+            <div id="content">
+               Site path: 
+               <asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator=" >>" ForeColor="#0219B0">
+               </asp:SiteMapPath>
+               
+               <hr class="breadcrumbhr" />
+          
+               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+               </asp:ContentPlaceHolder>
+
+            </div>
+         </div>
+         <div id = "footer">
+           
+                     <span class="footerSpan">
+                        Copyright &#169 Allan Henriksen
+                     </span>       
+      
+         </div>
+      </div>
     </form>
 </body>
 </html>
