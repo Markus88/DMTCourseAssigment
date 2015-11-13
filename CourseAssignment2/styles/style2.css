@@ -38,7 +38,7 @@ ul 								{ list-style-type: none;}
 
 .menuSelected						{ border-bottom: 1px solid #fff;}		
 
-#altMenuInnerBar 					{ display: none;}
+#altMenuBar 						{ display: none;}
 
 
 
@@ -47,7 +47,11 @@ ul 								{ list-style-type: none;}
 
 /*--------------- SOCIALE MEDIA BAR--------------*/
 #mainSocialeBar 				{}
-
+.socialeMediaBar				{ width: 100%; margin-top: 20px; }
+.socialeMediaBar ul				{ text-align: center; padding-left: 0px !important; }
+.socialeMediaBar ul li			{ display: inline-block; margin-left: 20px; width: 50px; }
+.socialeMediaBar ul li a		{ color: #333 !important; }
+.socialeMediaBar ul li a img	{ width: 50px; }
 
 
 
@@ -62,6 +66,7 @@ ul 								{ list-style-type: none;}
 .content-section-row-onecolumn-item-center 	{ width: 50%; text-align: center; margin: 0 auto !important;}
 .content-section-row-onecolumn-item-left 	{ width: 50%; text-align: left; }
 
+.firstSection							{ padding-top: 0px; margin-top: 20px;}
 
 .tablereservation						{ background-image: url("../images/table90b.jpg"); background-size: 100%;  background-position: center; color: #fff !important;}
 
@@ -72,3 +77,51 @@ ul 								{ list-style-type: none;}
 
 /*--------------- FOOTER CONTAINER --------------*/
 #mainFooterContainer 					{ width: 100%; height:100px; background-color: #0b0400; border-top: 1px solid #fff; }
+
+
+
+
+
+
+
+
+
+
+/*------------- Media query -------------*/
+@media  (max-width:850px){
+	.contentTwoColumns				{ width: calc(100% - 40px) !important; margin-left: 0px !important; }
+	.contentContainer				{ max-width: 850px; margin: 0px auto; }
+}
+
+@media (max-width: 670px){
+	.contentTwoColumns				{ width: calc(100% - 40px) !important; margin-left: 0px !important; }
+	.contentContainer				{ max-width: 850px; margin: 0px auto; }
+	#altMenuBar 					{ display: block; text-align: left; margin-left: 40px; margin-right: 40px;}
+	#altMenuBar ul li 				{ width: 100%; height: auto;}	
+	#altMenuBar ul li a img			{ width: 100px; height: auto; padding-bottom: 5px;}
+	#menuBar 						{ display: none;}
+	#menubar 						{ padding-bottom: 10px; margin-top: 0px;}
+	#logo img 						{ width: 75%; max-width: 100%; margin-bottom: 20px; }
+}
+
+
+@media (max-width: 580px){
+
+	.contentTwoColumns				{ width: calc(100% - 40px) !important; margin-left: 0px !important; }
+	.contentContainer				{ max-width: 850px; margin: 0px auto; }
+	#altMenuBar 					{ height: auto; display: block; text-align: left; margin-left: 40px; margin-right: 40px;}
+	#altMenuBar ul li 				{ width: 100%; height: auto;}	
+	#altMenuBar ul li a img			{ width: 100px; height: auto; padding-bottom: 5px;}
+	#menuBar 						{ display: none;}
+	#logo img 						{ width: 50%; max-width: 100%; margin-bottom: 20px; }
+}
+
+
+
+
+
+
+
+
+
+

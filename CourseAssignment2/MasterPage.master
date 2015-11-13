@@ -3,56 +3,99 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <link href="CSS/MainStyleSheet.css" rel="stylesheet" />
-    <asp:ContentPlaceHolder id="head" runat="server">
-    </asp:ContentPlaceHolder>
-</head>
-<body>
-    <form id="form1" runat="server">
-     <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
-        
-      <div id="wrapper"> 
-        
-         <div id="header">
-           <span class="headerSpan">
-              Welcome to DMT
-           </span>
-         </div>
+  <head runat="server">
+      <title>B-Sushi</title>
+      <link href="styles/style2.css" rel="stylesheet" />
+      <asp:ContentPlaceHolder id="head" runat="server">
 
-         <div id="container">
-            <div id="menu">
-              <div id="tree">
-                <asp:TreeView ID="TreeView1" DataSourceID="SiteMapDataSource1" runat="server" NodeIndent="15" ShowExpandCollapse="False" NodeStyle-CssClass="menunode" HoverNodeStyle-CssClass="menunodehover" SelectedNodeStyle-CssClass="menunodeselected" RootNodeStyle-CssClass="rootnode" ParentNodeStyle-CssClass="parentnode">
-                </asp:TreeView>
-              </div>
-              <div id="dropdown">
-                <asp:Menu ID="Menu1" DataSourceID="SiteMapDataSource1" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" CssClass="topmenu" StaticMenuItemStyle-CssClass="dropmenunode" DynamicMenuItemStyle-CssClass="dynamicmenunode" StaticEnableDefaultPopOutImage="False" StaticPopOutImageUrl="~/images/arrowdw.png" StaticHoverStyle-BackColor="#0219B0" StaticHoverStyle-ForeColor="White" StaticSelectedStyle-BackColor="#0219B0" DynamicHoverStyle-BackColor="#A1BBFF" DynamicHoverStyle-ForeColor="#0219B0" DynamicSelectedStyle-ForeColor="#0219B0">
-                </asp:Menu>
-              </div> 
-            </div>
-          
-            <div id="content">
-               Site path: 
-               <asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator=" >>" ForeColor="#0219B0">
-               </asp:SiteMapPath>
-               
-               <hr class="breadcrumbhr" />
-          
-               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-               </asp:ContentPlaceHolder>
+      </asp:ContentPlaceHolder>
+  </head>
+  <body>
+      <form id="form1" runat="server">
+         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        
+        <div id="mainWrapper">
 
+          <div id="mainHeaderContainer" class="restaurant">
+            <div class="pageContentSize">
+              <div id="logo">
+                <a href="Default.html">
+                  <img src="images/logoWhite.png" alt="Logo" />
+                </a>
+              </div>  
+              <div id="mainMenubar">
+                <div id="menuBar">
+                  <ul>
+                      <li class="firstElement">
+                        <a href="#" class="menuSelected">B-sushi</a>
+                      </li>
+                      <li><a href="#">Events</a></li>
+                      <li><a href="#">Priser</a></li>
+                      <li><a href="#">Om Sushi</a></li>
+                      <li><a href="#">Galleri</a></li>
+                      <li><a href="#">Kontakt</a></li>
+                      <li><a href="#">Job</a></li>                
+                  </ul>         
+                </div>
+                <div id="altMenuBar">
+                  <ul>
+                      <li class="firstElement">
+                        <a href="#">
+                          <img src="images/MenuIcon.png"/>
+                        </a>
+                      </li>                
+                  </ul>         
+                </div>      
+              </div>           
+            </div>        
+          </div>
+
+          <div class="socialeMediaBar">
+            <div class="pageContentSize">
+              <ul>
+                  <li class="firstElement">
+                    <a href="#">
+                      <img src="images/fb.gif" />
+                    </a>
+                  </li>
+                  <li><a href="#"><img src="images/insta.png" /></a></li>
+                  <li><a href="#"><img src="images/twitter.gif" /></a></li>                 
+              </ul>                     
+            </div>          
+          </div>
+
+          <div id="mainContentContainer">
+            <asp:ContentPlaceHolder id="head" runat="server">
+
+            </asp:ContentPlaceHolder>      
+          </div>            
+
+          <div id="">
+           <div id="menu">
+            <div id="tree">
+              <asp:TreeView ID="TreeView1" DataSourceID="SiteMapDataSource1" runat="server" NodeIndent="15" ShowExpandCollapse="False" NodeStyle-CssClass="menunode" HoverNodeStyle-CssClass="menunodehover" SelectedNodeStyle-CssClass="menunodeselected" RootNodeStyle-CssClass="rootnode" ParentNodeStyle-CssClass="parentnode">
+              </asp:TreeView>
             </div>
-         </div>
-         <div id = "footer">
-           
-                     <span class="footerSpan">
-                        Copyright &#169 Allan Henriksen
-                     </span>       
-      
-         </div>
-      </div>
-    </form>
-</body>
+            <div id="dropdown">
+              <asp:Menu ID="Menu1" DataSourceID="SiteMapDataSource1" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" CssClass="topmenu" StaticMenuItemStyle-CssClass="dropmenunode" DynamicMenuItemStyle-CssClass="dynamicmenunode" StaticEnableDefaultPopOutImage="False" StaticPopOutImageUrl="~/images/arrowdw.png" StaticHoverStyle-BackColor="#0219B0" StaticHoverStyle-ForeColor="White" StaticSelectedStyle-BackColor="#0219B0" DynamicHoverStyle-BackColor="#A1BBFF" DynamicHoverStyle-ForeColor="#0219B0" DynamicSelectedStyle-ForeColor="#0219B0">
+              </asp:Menu>
+            </div> 
+          </div>
+        
+          <div id="content">
+             Site path: 
+             <asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator=" >>" ForeColor="#0219B0">
+             </asp:SiteMapPath>
+             
+             <hr class="breadcrumbhr" />       
+          </div>
+
+          <div id="mainFooterContainer">
+            <div class="pageContentSize">
+              
+            </div>      
+          </div>
+        </div>     
+      </form>
+  </body>
 </html>
