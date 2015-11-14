@@ -1,100 +1,105 @@
-html, body 						{ margin: 0; padding: 0;}
+html, body 						{ width: 100%;}
 
-*								{ font-family: 'Open Sans', sans-serif; font-weight: lighter;}
+*								{ margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; font-weight: lighter;}
 
 h1								{}
 h2								{}
 h3								{}
 h4								{}
-p								{}
+p								{ margin-top: 10px; }
 a								{ width:100%; font-weight: normal; text-decoration: none; color:#4769ff;}
 
-ul 								{ list-style-type: none;}
+ul 								{ list-style-type: none; }
+li 								{ margin: 0; padding: 0;}
 
 
 
-#mainWrapper					{ width: 100%; margin: 0; padding: 0;  background-color: #f4eee9;}
-
-
-
+#mainWrapper					{ width: 100%; margin: 0; padding: 0;  background-color: #f4eee8;}
+.pageContentSize 				{ max-width: 1200px; margin: 0px auto;}
 .clearfix						{ clear:both;}
 .firstElement					{ margin-left: 0px !important;}
-.zeroElement					{ margin-top: 0px; padding-top: 0px;}
+.firstSection 					{ margin-top: 0px !important;}
 
 
 
-
-/*------------- Header content styles -------------*/
-#mainHeader						{ width: 100%; height: auto; background-position: center;}
-#headerOverlay					{ width: 100%; height: 100%; text-align: center; background-color: transparent; }
+/*--------------- HEADER CONTAINER --------------*/
+#mainHeaderContainer			{ width: 100%; height: auto; text-align: center; background-position: center;}
 #logo							{ margin: 0px auto;  display: inline-block; }
 #logo img 						{ width: 100%; max-width: 100%; margin-bottom: 20px; }
 
 .restaurant 					{ background-image: url("../images/haiku_sushi_06_90bb.jpg") !important; background-size: 100% !important;}
 
+/*--------------- HEADER MENU CONTAINER --------------*/
+#mainMenubar						{ width: 100%; text-align:center; margin-top: 30px; height: 30px;}
+#mainMenubar ul 					{ display: inline-block; list-style-type: none; padding: 0px; margin: 0px; }
+#mainMenubar ul li 					{ width: 70px; display: inline-block; margin-left: 10px;}
+#mainMenubar ul li:hover 			{ border-bottom: 1px solid #f4eee9;}
+#mainMenubar ul li a				{ text-decoration: none; color: #fff; padding: 0; margin:0; font-weight: lighter;}
+#mainMenubar ul li a:hover			{ text-decoration: none; color: #fff; }
+#mainMenubar ul li a:visited		{ text-decoration: none; color: #fff; }
 
+.menuSelected						{ border-bottom: 1px solid #fff;}		
 
-
-/*------------- Menubar styles -------------*/
-#menubar						{ width: 100%; text-align:center; margin-top: 30px; height: 30px;}
-#menubar ul 					{ display: inline-block; list-style-type: none; padding: 0px; margin: 0px; }
-#menubar ul li 					{ width: 70px; display: inline-block; margin-left: 10px;}
-#menubar ul li:hover 			{ border-bottom: 1px solid #f4eee9;}
-#menubar ul li a				{ text-decoration: none; color: #fff; padding: 0; margin:0; font-weight: lighter;}
-#menubar ul li a:hover			{ text-decoration: none; color: #fff; }
-#menubar ul li a:visited		{ text-decoration: none; color: #fff; }
-
-.menuSelected					{ border-bottom: 1px solid #fff;}		
-
-#menuContent					{ max-width: 1200px; margin: 0 auto;}
-#menuInnerBar					{ margin: 0 40px; margin-top: 40px; padding-bottom: 5px; text-align: center;}
-#leftMenubar 					{ float: left;}
-#rightMenubar 					{ float: right;}
-
-#altMenuInnerBar 				{ display: none;}
-
-
-
-
-
-/*------------- Sociale Mediabar styles -------------*/
-.socialeMediaBar				{ width: 100%; }
-.socialeMediaBar ul				{ text-align: center; padding-left: 0px !important; }
-.socialeMediaBar ul li			{ display: inline-block; margin-left: 20px; width: 50px; }
-.socialeMediaBar ul li a		{ color: #333 !important; }
-.socialeMediaBar ul li a img	{ width: 50px; }
-
-
-
-
-/*------------- Content styles -------------*/
-#mainContent					{ width: 100%; } 
-.contentSectionOne				{ width: 100%; padding-bottom: 80px; padding-top: 40px; background-color: #f4eee9; }
-.contentSectionTwo				{ width: 100%; color: #fff; padding-top: 80px; padding-bottom: 80px; background-position: center; background-size: 2000px; }
-.contentContainer				{ max-width: 1200px; margin: 0px auto; }
-.contentInnerContainer			{ margin: 0 40px;}
-.contentTwoColumns				{ float: left; margin-left: 40px; width: calc((100% - 40px)/2) !important; }
-.contentOneColumn				{ width: 50%; text-align: center; margin: 0 auto !important;}
-
-
-.tablereservation				{ background-image: url("../images/table90b.jpg");}
-
-
-
-/*------------- Footer content styles -------------*/
-#mainFooter						{ width: 100%; height:100px; background-color: #0b0400; border-top: 1px solid #fff; }
+#altMenuBar 						{ display: none;}
 
 
 
 
 
 
+/*--------------- SOCIALE MEDIA BAR--------------*/
+#mainSocialeBar 							{}
+.socialeMediaBar							{ width: 100%; margin-top: 20px; }
+.socialeMediaBar ul							{ text-align: center; padding-left: 0px !important; }
+.socialeMediaBar ul li						{ display: inline-block; margin-left: 20px; width: 50px; }
+.socialeMediaBar ul li a					{ color: #333 !important; }
+.socialeMediaBar ul li a img				{ width: 50px; }
 
-/*------------- Default content styles -------------*/
-.openingHours ul 				{ list-style-type: none; margin: 0px; padding: 0px;}
-.openingHours ul li				{ margin: 0; padding: 0; display: block;}
-.openingHours ul li p			{ width: 50%; margin: 0px; padding: 0px; display: inline-block;}
-.spacer 						{ width: 150px !important;}
+
+
+/*--------------- CONTENT CONTAINER --------------*/
+#mainContentContainer 						{ width: 100%; height: auto;}
+.content-section							{ padding: 80px 0; }
+.content-section-row						{ margin: 0px 80px; width: calc(100% - 160px); }
+.content-section-row-twocolumns 			{ margin: 20px 0px;}
+.content-section-row-twocolumns-column 		{ float: left; margin-left: 40px; width: calc((100% - 40px)/2) !important;}
+.content-section-row-twocolumns-item 		{ width: auto;  }
+.content-section-row-twocolumns-item-left 	{ float: left; text-align: left; display: block; }
+.content-section-row-twocolumns-item-right 	{ float: right; text-align: right; width: auto; display: inline-block; }
+
+.content-section-row-onecolumn 				{ margin: 20px 0px;}
+.content-section-row-onecolumn-column 		{ width: 50%; display: block; text-align: center; margin: 0 auto !important;}
+.content-section-row-onecolumn-item 		{ width: auto;}
+.content-section-row-onecolumn-item-center 	{ text-align: center;}
+.content-section-row-onecolumn-item-left 	{ text-align: left; width: auto; display: inline-block; }
+.content-section-row-onecolumn-item-right 	{ text-align: right; width: auto; display: inline-block; }
+
+.firstSection								{ padding-top: 0px; margin-top: 20px;}
+
+.tablereservation							{ background-image: url("../images/table90b.jpg"); background-size: 2000px;  background-position: center; color: #fff !important;}
+.sectionOpeningHours 						{ background-color: #fff; background-image: url("../images/sushistyle_sushi_ugor.jpg"); background-position: left; background-repeat: no-repeat; background-size: auto 90% ;}
+
+
+.openingHours 								{ text-align: left; display: inline-block;}
+.openingHours ul 							{ list-style-type: none; margin: 0px; padding: 0px; display: block;}
+.openingHours ul li							{ margin: 0; padding: 0; display: block;}
+.openingHours ul li p						{ width: auto; margin: 0px; padding: 0px; display: inline-block;}
+.openingHours p 							{ margin-top: 10px; }
+.spacer 									{ width: 150px !important;}
+
+/*--------------- FOOTER CONTAINER --------------*/
+#mainFooterContainer 					{ width: 100%; height:auto; padding: 20px 0; background-color: #0b0400;  }
+#mainFooterContainer ul 				{ display: block; padding: 0px; margin: 0px;}
+#mainFooterContainer li 				{ display: block;}
+#mainFooterContainer p, h3 				{ color: #fff;}
+#mainFooterContainer li p 				{ font-size: 12px; margin-top: 0px; }
+#mainFooterContainer p 					{ font-size: 12px; margin-top: 10px; }
+#mainFooterContainer h3 				{ font-size: 14px; }
+
+
+
+
+
 
 
 
@@ -103,32 +108,67 @@ ul 								{ list-style-type: none;}
 
 /*------------- Media query -------------*/
 @media  (max-width:850px){
-	.contentTwoColumns				{ width: calc(100% - 40px) !important; margin-left: 0px !important; }
-	.contentContainer				{ max-width: 850px; margin: 0px auto; }
+	.pageContentSize 							{ max-width: 850px; margin: 0px auto; }
+	.content-section-row 						{ text-align: center; margin-right: auto; margin-left: auto;}
+	.content-section-row-twocolumns-column		{ width: 100% !important; text-align: center !important; margin: 40px auto 0 auto; }				
+	.content-section-row-twocolumns-item-left 	{ float: none; text-align: center; display: block; }
+	.content-section-row-twocolumns-item-right 	{ float: none; text-align: center; width: auto; display: inline-block; }
+
+
+	.content-section-row-onecolumn 				{ margin: 20px 0px;}
+	.content-section-row-onecolumn-column 		{ width: 100% !important; margin: 40px auto 0 auto; }
+
+	.sectionOpeningHours 						{ background-color: #fff; background-image: url("../images/sushistyle_sushi_ugor.jpg"); background-position: left; background-repeat: no-repeat; background-size: 40% auto; }
+
+
 }
 
 @media (max-width: 670px){
-	.contentTwoColumns				{ width: calc(100% - 40px) !important; margin-left: 0px !important; }
-	.contentContainer				{ max-width: 850px; margin: 0px auto; }
-	#altMenuInnerBar 				{ display: block; text-align: left; margin-left: 40px; margin-right: 40px;}
-	#altMenuInnerBar ul li 			{ width: 100%; height: auto;}	
-	#altMenuInnerBar ul li a img	{ width: 100px; height: auto; padding-bottom: 5px;}
-	#menuInnerBar 					{ display: none;}
-	#menubar 						{ padding-bottom: 10px; margin-top: 0px;}
-	#logo img 						{ width: 75%; max-width: 100%; margin-bottom: 20px; }
+	.pageContentSize 							{ max-width: 850px; margin: 0px auto; }
+	.content-section-row 						{ text-align: center; margin-right: auto; margin-left: auto;}
+	.content-section-row-twocolumns-column		{ width: 100% !important; margin: 40px auto 0 auto; }				
+
+	.content-section-row-onecolumn 				{ margin: 20px 0px;}
+	.content-section-row-onecolumn-column 		{ width: 100% !important; margin: 40px auto 0 auto; }
+	
+	#mainMenubar								{ width: 100%; text-align:center; margin-top: 30px; height: 40px;}
+	#altMenuBar 								{ display: block; text-align: left; margin-left: 40px; margin-right: 40px;}
+	#altMenuBar ul								{ display: block; text-align: left !important;}
+	#altMenuBar ul li 							{ width: 100%; height: auto;}	
+	#altMenuBar ul li a img						{ width: 100px; height: auto; padding-bottom: 5px;}
+	
+	#menuBar 									{ display: none;}
+	#menubar 									{ padding-bottom: 10px; margin-top: 0px;}
+
+	#logo img 									{ width: 75%; max-width: 100%; margin-bottom: 20px; }
 }
 
 
 @media (max-width: 580px){
 
-	.contentTwoColumns				{ width: calc(100% - 40px) !important; margin-left: 0px !important; }
-	.contentContainer				{ max-width: 850px; margin: 0px auto; }
-	#altMenuInnerBar 				{ height: auto; display: block; text-align: left; margin-left: 40px; margin-right: 40px;}
-	#altMenuInnerBar ul li 			{ width: 100%; height: auto;}	
-	#altMenuInnerBar ul li a img	{ width: 100px; height: auto; padding-bottom: 5px;}
-	#menuInnerBar 					{ display: none;}
-	#logo img 						{ width: 50%; max-width: 100%; margin-bottom: 20px; }
+	.pageContentSize 							{ max-width: 850px; margin: 0px auto; }
+	.content-section-row 						{ text-align: center; margin-right: auto; margin-left: auto;}
+	.content-section-row-twocolumns-column		{ width: 100% !important; margin: 40px auto 0 auto; }				
+
+	.content-section-row-onecolumn 				{ margin: 20px 0px;}
+	.content-section-row-onecolumn-column 		{ width: 100% !important; margin: 40px auto 0 auto; }
+
+	.sectionOpeningHours 						{ background-color: #fff !important; background-image: none; }
+
+
+
+	#mainMenubar								{ width: 100%; text-align:center; margin-top: 30px; height: 40px;}	
+	#altMenuBar ul li 							{ width: 100%; height: auto;}	
+	#altMenuBar ul li a img						{ width: 100px; height: auto; padding-bottom: 5px;}
+	#menuBar 									{ display: none;}
+
+	#logo img 									{ width: 50%; max-width: 100%; margin-bottom: 20px; }
 }
+
+
+
+
+
 
 
 

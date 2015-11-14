@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head runat="server">
       <title>B-Sushi</title>
-      <link href="styles/style2.css" rel="stylesheet" />
+      <link href="styles/style.css" rel="stylesheet" />
       <asp:ContentPlaceHolder id="head" runat="server">
 
       </asp:ContentPlaceHolder>
@@ -19,48 +19,45 @@
           <div id="mainHeaderContainer" class="restaurant">
             <div class="pageContentSize">
               <div id="logo">
-                <a href="Default.html">
+                <a href="index.html">
                   <img src="images/logoWhite.png" alt="Logo" />
                 </a>
               </div>  
               <div id="mainMenubar">
                 <div id="menuBar">
                   <ul>
-                      <li class="firstElement">
-                        <a href="#" class="menuSelected">B-sushi</a>
-                      </li>
-                      <li><a href="#">Events</a></li>
-                      <li><a href="#">Priser</a></li>
-                      <li><a href="#">Om Sushi</a></li>
-                      <li><a href="#">Galleri</a></li>
-                      <li><a href="#">Kontakt</a></li>
-                      <li><a href="#">Job</a></li>                
-                  </ul>         
+                            <li class="firstElement">
+                              <a href="index.html" class="menuSelected">B-sushi</a>
+                            </li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="prices-html">Priser</a></li>
+                            <li><a href="#">Om Sushi</a></li>
+                            <li><a href="gallery.html">Galleri</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Job</a></li>                
+                        </ul>         
                 </div>
                 <div id="altMenuBar">
                   <ul>
-                      <li class="firstElement">
-                        <a href="#">
-                          <img src="images/MenuIcon.png"/>
-                        </a>
-                      </li>                
-                  </ul>         
+                            <li class="firstElement">
+                              <a href="#">
+                                <img src="images/MenuIcon.png"/>
+                              </a>
+                            </li>                
+                        </ul>         
                 </div>      
-              </div>           
+              </div>          
             </div>        
           </div>
 
           <div class="socialeMediaBar">
             <div class="pageContentSize">
               <ul>
-                  <li class="firstElement">
-                    <a href="#">
-                      <img src="images/fb.gif" />
-                    </a>
-                  </li>
-                  <li><a href="#"><img src="images/insta.png" /></a></li>
-                  <li><a href="#"><img src="images/twitter.gif" /></a></li>                 
-              </ul>                     
+                        <li class="firstElement">
+                          <a href="http://www.facebook.com/bsushi.dk" target="blank"><img src="images/fb.gif" /></a>
+                        </li>
+                        <li><a href="http://instagram.com/bsushihorsens" target="blank"><img src="images/insta.png" /></a></li>                
+                    </ul>                     
             </div>          
           </div>
 
@@ -92,7 +89,39 @@
 
           <div id="mainFooterContainer">
             <div class="pageContentSize">
-              
+              <div class="content-section-row">
+                <div class="content-section-row-twocolumns">
+                  <div class="content-section-row-twocolumns-column firstElement">
+                    <div class="content-section-row-twocolumns-item-left">
+                      <div class="openingHours">
+                        <h3>Åbningstider</h3>
+                        <ul class="">
+                          <li><p class="spacer">Mandag:</p><p>Lukket</p></li>
+                          <li><p class="spacer">Tirsdag-Torsdag:</p><p>17.00</p></li>
+                          <li><p class="spacer">Fredag:</p><p>15.00</p></li>
+                          <li><p class="spacer">Lørdag:</p><p>17.00</p></li>
+                          <li><p class="spacer">Søndag/Helligdage:</p><p>17.00</p></li>
+                        </ul>
+                      </div>              
+                    </div>
+                  </div>  
+                  <div class="content-section-row-twocolumns-column">           
+                    <div class="content-section-row-twocolumns-item-right">
+                      <div class="openingHours">
+                        <h3>Kontakt</h3>
+                        <ul class="">
+                          <li><p class="spacer">Smedegade 1</p></li>
+                          <li><p class="spacer">8700 Horsens</p></li>
+                          <li><p class="spacer">+45 75 613 700</p></li>
+                          <li><p class="spacer">bsushi@bsushi.dk</p></li>
+                          <li><p class="spacer">benedikte@bsushi.dk</p></li>
+                        </ul>
+                      </div>              
+                    </div>  
+                  </div>
+                  <div class="clearfix"></div>  
+                </div>              
+              </div>
             </div>      
           </div>
         </div>     
