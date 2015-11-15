@@ -2,10 +2,10 @@ html, body 						{ width: 100%;}
 
 *								{ margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; font-weight: lighter;}
 
-h1								{}
-h2								{}
-h3								{}
-h4								{}
+h1								{ color: #000;}
+h2								{ color: #000;}
+h3								{ color: #000;}
+h4								{ color: #000;}
 p								{ margin-top: 10px; }
 a								{ width:100%; font-weight: normal; text-decoration: none; color:#4769ff;}
 
@@ -58,27 +58,46 @@ li 								{ margin: 0; padding: 0;}
 
 
 /*--------------- CONTENT CONTAINER --------------*/
-#mainContentContainer 						{ width: 100%; height: auto;}
-.content-section							{ padding: 80px 0; }
-.content-section-row						{ margin: 0px 80px; width: calc(100% - 160px); }
-.content-section-row-twocolumns 			{ margin: 20px 0px;}
-.content-section-row-twocolumns-column 		{ float: left; margin-left: 40px; width: calc((100% - 40px)/2) !important;}
-.content-section-row-twocolumns-item 		{ width: auto;  }
-.content-section-row-twocolumns-item-left 	{ float: left; text-align: left; display: block; }
-.content-section-row-twocolumns-item-right 	{ float: right; text-align: right; width: auto; display: inline-block; }
+#mainContentContainer 										{ width: 100%; height: auto;}
+.content-section											{ padding: 80px 0; }
+.content-section-row										{ margin: 0px 80px; width: calc(100% - 160px); }
+.content-section-row-twocolumns 							{ margin: 20px 0px;}
+.content-section-row-twocolumns-column 						{ float: left; margin-left: 40px; width: calc((100% - 40px)/2) !important;}
+.content-section-row-twocolumns-column-item 				{ width: auto; float: none; }
+.content-section-row-twocolumns-column-item-left 			{ text-align: left; display: block; }
+.content-section-row-twocolumns-column-item-center			{ text-align: center; display: block; }
+.content-section-row-twocolumns-column-item-right 			{ text-align: right; width: auto; display: inline-block; }
 
-.content-section-row-onecolumn 				{ margin: 20px 0px;}
-.content-section-row-onecolumn-column 		{ width: 50%; display: block; text-align: center; margin: 0 auto !important;}
-.content-section-row-onecolumn-item 		{ width: auto;}
-.content-section-row-onecolumn-item-center 	{ text-align: center;}
-.content-section-row-onecolumn-item-left 	{ text-align: left; width: auto; display: inline-block; }
-.content-section-row-onecolumn-item-right 	{ text-align: right; width: auto; display: inline-block; }
+.content-section-row-onecolumn 								{ margin: 20px 0px;}
+.content-section-row-onecolumn-column 						{ width: 50%; display: block; text-align: center; margin: 0 auto !important;}
+.content-section-row-onecolumn-column-item 					{ width: auto;}
+.content-section-row-onecolumn-column-item-center 			{ text-align: center;}
+.content-section-row-onecolumn-column-item-left 			{ text-align: left; width: auto; display: inline-block; }
+.content-section-row-onecolumn-column-item-right 			{ text-align: right; width: auto; display: inline-block; }
 
 .firstSection								{ padding-top: 0px; margin-top: 20px;}
 
 .tablereservation							{ background-image: url("../images/table90b.jpg"); background-size: 2000px;  background-position: center; color: #fff !important;}
-.sectionOpeningHours 						{ background-color: #fff; background-image: url("../images/sushistyle_sushi_ugor.jpg"); background-position: left; background-repeat: no-repeat; background-size: auto 90% ;}
+.tablereservation h1						{ color: #fff;}
+.tablereservation p 						{ color: #fff;}
 
+.sectionOpeningHours 						{ background-color: #fff; background-image: url("../images/sushistyle_sushi_ugor.jpg"); background-position: left; background-repeat: no-repeat; background-size: auto 90%;}
+.menucard 									{ background-color: #f3f3f3; }
+.menucard img								{ max-width: 100%; }
+
+.Ad-Libitum img 							{ max-width: 100%; }
+
+.adlibitum-types 							{ background-color: #0b0400;}
+.adlibitum-types h1							{ color: #fff;}
+.adlibitum-types p							{ color: #fff;}
+
+.birthday 									{ background-color: #fff; background-image: url("../images/birthday.jpg"); background-position: center; background-repeat: no-repeat; background-size: 2000px;}
+.birthday h1								{ color: #fff;}
+.birthday p 								{ color: #fff;}
+
+.foodwaste 									{ }
+.foodwaste h1								{color: #000; }
+.foodwaste p								{color: #000; }
 
 .openingHours 								{ text-align: left; display: inline-block;}
 .openingHours ul 							{ list-style-type: none; margin: 0px; padding: 0px; display: block;}
