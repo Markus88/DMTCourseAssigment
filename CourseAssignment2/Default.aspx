@@ -9,20 +9,24 @@
         <div class="content-section-row-twocolumns ">
           <div class="content-section-row-twocolumns-column firstElement">
             <div class="content-section-row-twocolumns-item">
-              <h1 class="zeroElement">Byens hotteste restaurant</h1>
+              <h1 class="zeroElement">
+                  <asp:Literal runat="server" Text="<%$ Resources:Globalization, FrontLeftHeadlineTextBox %>"></asp:Literal>
+              </h1>
               <p>
-                B-sushi byder indenfor i intime omgivelser til en ny og anderledes aften. Alverdens smagsløg har gode vilkår i Horsens, hvor vi kun serverer friskrullet og veltilberedt sushi samt rispapirruller. Alt kun lavet af friske og de allerbedste råvarer. Det kan ikke bare ses men også smages. Vi forsøger så vidt det er os muligt at købe fisk fra bæredygtig produktion
+                <asp:Literal runat="server" Text="<%$ Resources:Globalization, FrontLeftTextBox %>"></asp:Literal>               
               </p>
               <p>     
-                På gensyn i byens hotteste restaurant !     
+                <asp:Literal runat="server" Text="<%$ Resources:Globalization, FrontLeftBottomTextBox %>"></asp:Literal>  
               </p>                  
             </div>
           </div>  
           <div class="content-section-row-twocolumns-column">                 
             <div class="content-section-row-twocolumns-item">
-              <h1>5 Stjerner til b-sushi</h1>
+              <h1>
+                  <asp:Literal runat="server" Text="<%$ Resources:Globalization, FrontRightHeadlineTextBox %>"></asp:Literal>
+              </h1>
               <p>
-                Vi er simpelthen så stolte. Horsens folkeblad har været forbi vores nye lokaler, og belønnet os med hele 5 stjerner! Dette er der kommet denne flotte artikel ud af       
+                  <asp:Literal runat="server" Text="<%$ Resources:Globalization, FrontRightTextBox %>"></asp:Literal>
               </p>
             </div>
           </div>
@@ -38,13 +42,15 @@
           <div class="content-section-row-onecolumn-column">
             <div class="content-section-row-onecolumn-item-center">
               <div class="openingHours">
-                <h1>Åbningstider</h1>
+                <h1>
+                    <asp:Literal runat="server" Text="<%$ Resources:Globalization, OpeningTextBox %>"></asp:Literal>
+                </h1>
                 <ul class="">
-                  <li><p class="spacer">Mandag:</p><p>Lukket</p></li>
-                  <li><p class="spacer">Tirsdag-Torsdag:</p><p>17.00</p></li>
-                  <li><p class="spacer">Fredag:</p><p>15.00</p></li>
-                  <li><p class="spacer">Lørdag:</p><p>17.00</p></li>
-                  <li><p class="spacer">Søndag/Helligdage:</p><p>17.00</p></li>
+                  <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, MondayOpeningTextBox %>"></asp:Literal>:</p><p><asp:Literal runat="server" Text="<%$ Resources:Globalization, MondayHoursOpeningTextBox %>"></asp:Literal></p></li>
+                  <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, TueThuOpeningTextBox %>"></asp:Literal>:</p><p>17.00</p></li>
+                  <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, FridayOpeningTextBox %>"></asp:Literal>:</p><p>15.00</p></li>
+                  <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, SaturdayOpeningTextBox %>"></asp:Literal>:</p><p>17.00</p></li>
+                  <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, SunHolOpeningTextBox %>"></asp:Literal>:</p><p>17.00</p></li>
                 </ul>
                 <p>Smedegade 1, 8700 Horsens</p>
               </div>    
@@ -61,12 +67,12 @@
         <div class="content-section-row-onecolumn">
           <div class="content-section-row-onecolumn-column">            
             <div class="content-section-row-onecolumn-item-center">
-              <h1 class="zeroElement">Bord reservation</h1>
+              <h1 class="zeroElement"><asp:Literal runat="server" Text="<%$ Resources:Globalization, ReservationHeadlineTextBox %>"></asp:Literal></h1>
               <p>
-                Undgå ventetid - ring og bestil i forvejen. Vi ruller først sushi når det bestilles - Din friskhedsgaranti
+                  <asp:Literal runat="server" Text="<%$ Resources:Globalization, ReservationTextBox %>"></asp:Literal>
               </p>
               <p>
-                Bestillinger samt bordreservationer modtages på tlf. 7561 3700 (også udenfor åbningstiden )
+                  <asp:Literal runat="server" Text="<%$ Resources:Globalization, BottomReservationTextBox %>"></asp:Literal>
               </p>
             </div>
           </div>  

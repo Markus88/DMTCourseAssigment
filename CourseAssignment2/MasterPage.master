@@ -62,7 +62,7 @@
           </div>
 
           <div id="mainContentContainer">
-            <asp:ContentPlaceHolder id="head" runat="server">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
 
             </asp:ContentPlaceHolder>      
           </div>            
@@ -94,13 +94,15 @@
                   <div class="content-section-row-twocolumns-column firstElement">
                     <div class="content-section-row-twocolumns-item-left">
                       <div class="openingHours">
-                        <h3>Åbningstider</h3>
+                        <h3>
+                            <asp:Literal runat="server" Text="<%$ Resources:Globalization, OpeningTextBox %>"></asp:Literal>
+                        </h3>
                         <ul class="">
-                          <li><p class="spacer">Mandag:</p><p>Lukket</p></li>
-                          <li><p class="spacer">Tirsdag-Torsdag:</p><p>17.00</p></li>
-                          <li><p class="spacer">Fredag:</p><p>15.00</p></li>
-                          <li><p class="spacer">Lørdag:</p><p>17.00</p></li>
-                          <li><p class="spacer">Søndag/Helligdage:</p><p>17.00</p></li>
+                            <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, MondayOpeningTextBox %>"></asp:Literal>:</p><p><asp:Literal runat="server" Text="<%$ Resources:Globalization, MondayHoursOpeningTextBox %>"></asp:Literal></p></li>
+                            <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, TueThuOpeningTextBox %>"></asp:Literal>:</p><p>17.00</p></li>
+                            <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, FridayOpeningTextBox %>"></asp:Literal>:</p><p>15.00</p></li>
+                            <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, SaturdayOpeningTextBox %>"></asp:Literal>:</p><p>17.00</p></li>
+                            <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, SunHolOpeningTextBox %>"></asp:Literal>:</p><p>17.00</p></li>
                         </ul>
                       </div>              
                     </div>
@@ -108,7 +110,9 @@
                   <div class="content-section-row-twocolumns-column">           
                     <div class="content-section-row-twocolumns-item-right">
                       <div class="openingHours">
-                        <h3>Kontakt</h3>
+                        <h3>
+                            <asp:Literal runat="server" Text="<%$ Resources:Globalization, MasterPageContact %>"></asp:Literal>
+                        </h3>
                         <ul class="">
                           <li><p class="spacer">Smedegade 1</p></li>
                           <li><p class="spacer">8700 Horsens</p></li>
