@@ -26,16 +26,16 @@
               <div id="mainMenubar">
                 <div id="menuBar">
                   <ul>
-                            <li class="firstElement">
-                              <a href="index.html" class="menuSelected">B-sushi</a>
-                            </li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="prices-html">Priser</a></li>
-                            <li><a href="#">Om Sushi</a></li>
-                            <li><a href="gallery.html">Galleri</a></li>
-                            <li><a href="#">Kontakt</a></li>
-                            <li><a href="#">Job</a></li>                
-                        </ul>         
+                    <li class="firstElement">
+                        <a href="index.html" class="menuSelected">B-sushi</a>
+                    </li>
+                        <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, EventHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="prices.html" runat="server" Text="<%$ Resources:Globalization, PricesHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, AboutSushiHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="gallery.html" runat="server" Text="<%$ Resources:Globalization, GalleryHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, ContactHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, JobHyperLink %>"></asp:HyperLink></li>               
+                  </ul>         
                 </div>
                 <div id="altMenuBar">
                   <ul>
@@ -66,7 +66,7 @@
 
             </asp:ContentPlaceHolder>      
           </div>            
-
+<!--
           <div id="">
            <div id="menu">
             <div id="tree">
@@ -86,7 +86,7 @@
              
              <hr class="breadcrumbhr" />       
           </div>
-
+    -->
           <div id="mainFooterContainer">
             <div class="pageContentSize">
               <div class="content-section-row">

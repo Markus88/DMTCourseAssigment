@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AboutSushiHyperLink" xml:space="preserve">
+    <value>About Sushi</value>
+  </data>
   <data name="BottomReservationTextBox" xml:space="preserve">
     <value>Bookings and table reservations, are received at tel. 7561 3700 (Also out of opening hours)</value>
+  </data>
+  <data name="ContactHyperLink" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="EventHyperLink" xml:space="preserve">
+    <value>Events</value>
   </data>
   <data name="FridayOpeningTextBox" xml:space="preserve">
     <value>Friday</value>
@@ -138,6 +147,12 @@
   <data name="FrontRightTextBox" xml:space="preserve">
     <value>We are just so proud. Horsens 'Folkeblad' have rated our new premises, and rewarded us with 5 stars! </value>
   </data>
+  <data name="GalleryHyperLink" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="JobHyperLink" xml:space="preserve">
+    <value>Job</value>
+  </data>
   <data name="MasterPageContact" xml:space="preserve">
     <value>Contact</value>
   </data>
@@ -149,6 +164,9 @@
   </data>
   <data name="OpeningTextBox" xml:space="preserve">
     <value>Opening Hours</value>
+  </data>
+  <data name="PricesHyperLink" xml:space="preserve">
+    <value>Prices</value>
   </data>
   <data name="ReservationHeadlineTextBox" xml:space="preserve">
     <value>Table Reservation</value>
