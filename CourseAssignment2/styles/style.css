@@ -49,7 +49,7 @@ li 								{ margin: 0; padding: 0;}
 
 /*--------------- SOCIALE MEDIA BAR--------------*/
 #mainSocialeBar 							{}
-.socialeMediaBar							{ width: 100%; margin-top: 20px; }
+.socialeMediaBar							{ width: 100%; padding-top: 20px; padding-bottom: 20px;}
 .socialeMediaBar ul							{ text-align: center; padding-left: 0px !important; }
 .socialeMediaBar ul li						{ display: inline-block; margin-left: 20px; width: 50px; }
 .socialeMediaBar ul li a					{ color: #333 !important; }
@@ -106,6 +106,12 @@ li 								{ margin: 0; padding: 0;}
 .openingHours p 							{ margin-top: 10px; }
 .spacer 									{ width: 150px !important;}
 
+
+
+.gallery 									{ background-color: #fff;}
+.galleryObj 								{ width: 100%; height: 600px;}
+.galleryslider 								{ width:100% !important;}
+
 /*--------------- FOOTER CONTAINER --------------*/
 #mainFooterContainer 					{ width: 100%; height:auto; padding: 20px 0; background-color: #0b0400;  }
 #mainFooterContainer ul 				{ display: block; padding: 0px; margin: 0px;}
@@ -130,15 +136,16 @@ li 								{ margin: 0; padding: 0;}
 	.pageContentSize 							{ max-width: 850px; margin: 0px auto; }
 	.content-section-row 						{ text-align: center; margin-right: auto; margin-left: auto;}
 	.content-section-row-twocolumns-column		{ width: 100% !important; text-align: center !important; margin: 40px auto 0 auto; }				
-	.content-section-row-twocolumns-item-left 	{ float: none; text-align: center; display: block; }
-	.content-section-row-twocolumns-item-right 	{ float: none; text-align: center; width: auto; display: inline-block; }
+	.content-section-row-twocolumns-column-item-left 	{ float: none; text-align: center; display: block; }
+	.content-section-row-twocolumns-column-item-right 	{ float: none; text-align: center; width: auto; display: inline-block; }
 
 
 	.content-section-row-onecolumn 				{ margin: 20px 0px;}
 	.content-section-row-onecolumn-column 		{ width: 100% !important; margin: 40px auto 0 auto; }
 
 	.sectionOpeningHours 						{ background-color: #fff; background-image: url("../images/sushistyle_sushi_ugor.jpg"); background-position: left; background-repeat: no-repeat; background-size: 40% auto; }
-
+	
+	.galleryObj 								{ width: 100%; height: 400px;}
 
 }
 
@@ -182,6 +189,8 @@ li 								{ margin: 0; padding: 0;}
 	#menuBar 									{ display: none;}
 
 	#logo img 									{ width: 50%; max-width: 100%; margin-bottom: 20px; }
+
+	.galleryObj 								{ width: 100%; height: 200px;}
 }
 
 
