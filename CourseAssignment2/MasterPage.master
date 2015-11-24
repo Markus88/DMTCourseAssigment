@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head runat="server">
       <title>B-Sushi</title>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css' />
       <link href="styles/style.css" rel="stylesheet" />
       <asp:ContentPlaceHolder id="head" runat="server">
 
@@ -18,21 +19,26 @@
 
           <div id="mainHeaderContainer" class="restaurant">
             <div class="pageContentSize">
+                <div class="languageContainer">
+                    <asp:ImageButton ID="imgBtn_lang_da" ImageUrl="~/images/icons/dk.png" AlternateText="Dk" CssClass="lang_btn" runat="server" OnClick="imgBtn_lang_da_Click" />
+                    <asp:ImageButton ID="imgBtn_lang_en" ImageUrl="~/images/icons/uk.png" AlternateText="En" CssClass="lang_btn" runat="server" OnClick="imgBtn_lang_en_Click" />
+                </div>
+
               <div id="logo">
                 <a href="index.html">
                   <img src="images/logoWhite.png" alt="Logo" />
                 </a>
-              </div>  
+              </div> 
+             </div> 
               <div id="mainMenubar">
+                <div class="pageContentSize">
                 <div id="menuBar">
                   <ul>
-                    <li class="firstElement">
-                        <a href="index.html" class="menuSelected">B-sushi</a>
-                    </li>
+                        <li class="firstElement"><asp:HyperLink NavigateUrl="Default.aspx" runat="server" Text="<%$ Resources:Globalization, HplMenuHome %>"></asp:HyperLink></li>
                         <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, EventHyperLink %>"></asp:HyperLink></li>
-                        <li><asp:HyperLink NavigateUrl="prices.html" runat="server" Text="<%$ Resources:Globalization, PricesHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="Prices.aspx" runat="server" Text="<%$ Resources:Globalization, PricesHyperLink %>"></asp:HyperLink></li>
                         <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, AboutSushiHyperLink %>"></asp:HyperLink></li>
-                        <li><asp:HyperLink NavigateUrl="gallery.html" runat="server" Text="<%$ Resources:Globalization, GalleryHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="Gallery.aspx" runat="server" Text="<%$ Resources:Globalization, GalleryHyperLink %>"></asp:HyperLink></li>
                         <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, ContactHyperLink %>"></asp:HyperLink></li>
                         <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, JobHyperLink %>"></asp:HyperLink></li>               
                   </ul>         
@@ -45,10 +51,10 @@
                               </a>
                             </li>                
                         </ul>         
-                </div>      
+                </div>  
+                    </div>    
               </div>          
             </div>        
-          </div>
 
           <div class="socialeMediaBar">
             <div class="pageContentSize">
@@ -66,27 +72,7 @@
 
             </asp:ContentPlaceHolder>      
           </div>            
-<!--
-          <div id="">
-           <div id="menu">
-            <div id="tree">
-              <asp:TreeView ID="TreeView1" DataSourceID="SiteMapDataSource1" runat="server" NodeIndent="15" ShowExpandCollapse="False" NodeStyle-CssClass="menunode" HoverNodeStyle-CssClass="menunodehover" SelectedNodeStyle-CssClass="menunodeselected" RootNodeStyle-CssClass="rootnode" ParentNodeStyle-CssClass="parentnode">
-              </asp:TreeView>
-            </div>
-            <div id="dropdown">
-              <asp:Menu ID="Menu1" DataSourceID="SiteMapDataSource1" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" CssClass="topmenu" StaticMenuItemStyle-CssClass="dropmenunode" DynamicMenuItemStyle-CssClass="dynamicmenunode" StaticEnableDefaultPopOutImage="False" StaticPopOutImageUrl="~/images/arrowdw.png" StaticHoverStyle-BackColor="#0219B0" StaticHoverStyle-ForeColor="White" StaticSelectedStyle-BackColor="#0219B0" DynamicHoverStyle-BackColor="#A1BBFF" DynamicHoverStyle-ForeColor="#0219B0" DynamicSelectedStyle-ForeColor="#0219B0">
-              </asp:Menu>
-            </div> 
-          </div>
-        
-          <div id="content">
-             Site path: 
-             <asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator=" >>" ForeColor="#0219B0">
-             </asp:SiteMapPath>
-             
-             <hr class="breadcrumbhr" />       
-          </div>
-    -->
+
           <div id="mainFooterContainer">
             <div class="pageContentSize">
               <div class="content-section-row">

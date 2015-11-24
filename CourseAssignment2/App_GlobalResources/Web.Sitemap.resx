@@ -117,73 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutSushiHyperLink" xml:space="preserve">
-    <value>Om Sushi</value>
+  <data name="MenuAboutSushi.title" xml:space="preserve">
+    <value>About Sushi</value>
   </data>
-  <data name="BottomReservationTextBox" xml:space="preserve">
-    <value>Bestillinger samt bordreservationer modtages på tlf. 7561 3700 (også udenfor åbningstiden )</value>
-  </data>
-  <data name="ContactHyperLink" xml:space="preserve">
-    <value>Kontakt</value>
-  </data>
-  <data name="EventHyperLink" xml:space="preserve">
-    <value>Events</value>
-  </data>
-  <data name="FridayOpeningTextBox" xml:space="preserve">
-    <value>Fredag</value>
-  </data>
-  <data name="FrontLeftBottomTextBox" xml:space="preserve">
-    <value>På gensyn i byens hotteste restaurant !</value>
-  </data>
-  <data name="FrontLeftHeadlineTextBox" xml:space="preserve">
-    <value>Byens hotteste restaurant</value>
-  </data>
-  <data name="FrontLeftTextBox" xml:space="preserve">
-    <value>B-sushi byder indenfor i intime omgivelser til en ny og anderledes aften. Alverdens smagsløg har gode vilkår i Horsens, hvor vi kun serverer friskrullet og veltilberedt sushi samt rispapirruller. Alt kun lavet af friske og de allerbedste råvarer. Det kan ikke bare ses men også smages. Vi forsøger så vidt det er os muligt at købe fisk fra bæredygtig produktion. På gensyn i byens hotteste restaurant</value>
-  </data>
-  <data name="FrontRightHeadlineTextBox" xml:space="preserve">
-    <value>5 Stjerner til B-sushi</value>
-  </data>
-  <data name="FrontRightTextBox" xml:space="preserve">
-    <value>Vi er simpelthen så stolte. Horsens folkeblad har været forbi vores nye lokaler, og belønnet os med hele 5 stjerner!</value>
-  </data>
-  <data name="GalleryHyperLink" xml:space="preserve">
-    <value>Galleri</value>
-  </data>
-  <data name="HplMenuHome" xml:space="preserve">
+  <data name="MenuBsushi.Title" xml:space="preserve">
     <value>B-Sushi</value>
   </data>
-  <data name="JobHyperLink" xml:space="preserve">
+  <data name="MenuContact.Title" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="MenuEvents.Title" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="MenuGallery.Title" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="MenuJob.Title" xml:space="preserve">
     <value>Job</value>
   </data>
-  <data name="MasterPageContact" xml:space="preserve">
-    <value>Kontakt</value>
-  </data>
-  <data name="MondayHoursOpeningTextBox" xml:space="preserve">
-    <value>Lukket</value>
-  </data>
-  <data name="MondayOpeningTextBox" xml:space="preserve">
-    <value>Mandag</value>
-  </data>
-  <data name="OpeningTextBox" xml:space="preserve">
-    <value>Åbningstider</value>
-  </data>
-  <data name="PricesHyperLink" xml:space="preserve">
-    <value>Priser</value>
-  </data>
-  <data name="ReservationHeadlineTextBox" xml:space="preserve">
-    <value>Bordreservation</value>
-  </data>
-  <data name="ReservationTextBox" xml:space="preserve">
-    <value>Undgå ventetid - ring og bestil i forvejen. Vi ruller først sushi når det bestilles - Din friskhedsgaranti</value>
-  </data>
-  <data name="SaturdayOpeningTextBox" xml:space="preserve">
-    <value>Lørdag</value>
-  </data>
-  <data name="SunHolOpeningTextBox" xml:space="preserve">
-    <value>Søndag / Helligdage</value>
-  </data>
-  <data name="TueThuOpeningTextBox" xml:space="preserve">
-    <value>Tirsdag-Torsdag</value>
+  <data name="MenuPrices.Title" xml:space="preserve">
+    <value>Prices</value>
   </data>
 </root>

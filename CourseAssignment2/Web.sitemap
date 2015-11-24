@@ -1,14 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-    <siteMapNode url="Home.aspx" title="Home"  description="">
-      <siteMapNode url="heading1.aspx" title="Åbningstider"  description="" />
-      <siteMapNode url="heading2.aspx" title="Menukort"  description="" />
-      <siteMapNode url="heading3.aspx" title="Nyheder"  description="" />
-      <siteMapNode url="heading4.aspx" title="Events"  description="" />
-      <siteMapNode url="heading5.aspx" title="Tilbud"  description="" />
-      <siteMapNode url="heading6.aspx" title="Om Sushi"  description="" />
-      <siteMapNode url="heading7.aspx" title="Galleri"  description="" />
-      <siteMapNode url="heading8.aspx" title="Kontakt"  description="" />
-      <siteMapNode url="heading9.aspx" title="Job"  description="" />
+<siteMap enableLocalization="true" xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx" resourceKey="MenuBsushi">
+      <siteMapNode url="Events.aspx" resourceKey="MenuEvents" />
+      <siteMapNode url="Prices.aspx" resourceKey="MenuPrices" />
+      <siteMapNode url="AboutSushi.aspx" resourceKey="MenuAboutSushi" />
+      <siteMapNode url="Gallery.aspx" resourceKey="MenuGallery"/>
+      <siteMapNode url="Contact.aspx" resourceKey="MenuContact" />
+      <siteMapNode url="Job.aspx" resourceKey="MenuJob" />
     </siteMapNode>
 </siteMap>

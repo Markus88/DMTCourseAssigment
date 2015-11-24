@@ -150,6 +150,9 @@
   <data name="GalleryHyperLink" xml:space="preserve">
     <value>Gallery</value>
   </data>
+  <data name="HplMenuHome" xml:space="preserve">
+    <value>B-Sushi</value>
+  </data>
   <data name="JobHyperLink" xml:space="preserve">
     <value>Job</value>
   </data>

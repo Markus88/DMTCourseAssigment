@@ -18,7 +18,7 @@ li 								{ margin: 0; padding: 0;}
 .pageContentSize 				{ max-width: 1200px; margin: 0px auto;}
 .clearfix						{ clear:both;}
 .firstElement					{ margin-left: 0px !important;}
-.firstSection 					{ margin-top: 0px !important;}
+.firstSection 					{ margin-top: 0px !important; padding-top:10px;}
 
 
 
@@ -29,10 +29,13 @@ li 								{ margin: 0; padding: 0;}
 
 .restaurant 					{ background-image: url("../images/haiku_sushi_06_90bb.jpg") !important; background-size: 100% !important;}
 
+.languageContainer              { position:fixed; top:10px; right:10px; }
+.lang_btn                       { width:auto; height:20px !important;}
+ 
 /*--------------- HEADER MENU CONTAINER --------------*/
-#mainMenubar						{ width: 100%; text-align:center; margin-top: 30px; height: 30px;}
-#mainMenubar ul 					{ display: inline-block; list-style-type: none; padding: 0px; margin: 0px; }
-#mainMenubar ul li 					{ width: 70px; display: inline-block; margin-left: 10px;}
+#mainMenubar						{ width: 100%; background-color: #0b0400; text-align:center; padding-top:5px; margin-top: 30px; height: 30px;}
+#mainMenubar ul 					{ display: inline-block;  list-style-type: none; padding: 0px; margin: 0px; }
+#mainMenubar ul li 					{ width: 100px; display: inline-block; margin-left: 10px;}
 #mainMenubar ul li:hover 			{ border-bottom: 1px solid #f4eee9;}
 #mainMenubar ul li a				{ text-decoration: none; color: #fff; padding: 0; margin:0; font-weight: lighter;}
 #mainMenubar ul li a:hover			{ text-decoration: none; color: #fff; }
@@ -42,7 +45,7 @@ li 								{ margin: 0; padding: 0;}
 
 #altMenuBar 						{ display: none;}
 
-
+.aspMenu                            {width: 100px; margin-left: 10px; color: #333 ; font-weight: lighter; display: inline-block; }
 
 
 
@@ -145,6 +148,15 @@ li 								{ margin: 0; padding: 0;}
 
 	.sectionOpeningHours 						{ background-color: #fff; background-image: url("../images/sushistyle_sushi_ugor.jpg"); background-position: left; background-repeat: no-repeat; background-size: 40% auto; }
 	
+	#mainMenubar								{ width: 100%; text-align:center; margin-top: 30px; height: 40px;}
+	#altMenuBar 								{ display: block; text-align: left; margin-left: 40px; margin-right: 40px;}
+	#altMenuBar ul								{ display: block; text-align: left !important;}
+	#altMenuBar ul li 							{ width: 100%; height: auto;}	
+	#altMenuBar ul li a img						{ width: 100px; height: auto; padding-bottom: 5px;}
+	
+	#menuBar 									{ display: none;}
+	#menubar 									{ padding-bottom: 10px; margin-top: 0px;}
+
 	.galleryObj 								{ width: 100%; height: 400px;}
 
 }
@@ -165,6 +177,7 @@ li 								{ margin: 0; padding: 0;}
 	
 	#menuBar 									{ display: none;}
 	#menubar 									{ padding-bottom: 10px; margin-top: 0px;}
+
 
 	#logo img 									{ width: 75%; max-width: 100%; margin-bottom: 20px; }
 }
