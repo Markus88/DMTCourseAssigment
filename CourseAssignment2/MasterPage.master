@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+      <title>B-Sushi</title>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css' />
+      <link href="styles/style.css" rel="stylesheet" />
+      <asp:ContentPlaceHolder id="head" runat="server">
+
+      </asp:ContentPlaceHolder>
+  </head>
+  <body>
+      <form id="form1" runat="server">
+         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        
+        <div id="mainWrapper">
+
+          <div id="mainHeaderContainer" class="restaurant">
+            <div class="pageContentSize">
+                <div class="languageContainer">
+                    <asp:ImageButton ID="imgBtn_lang_da" ImageUrl="~/images/icons/dk.png" AlternateText="Dk" CssClass="lang_btn" runat="server" OnClick="imgBtn_lang_da_Click" />
+                    <asp:ImageButton ID="imgBtn_lang_en" ImageUrl="~/images/icons/uk.png" AlternateText="En" CssClass="lang_btn" runat="server" OnClick="imgBtn_lang_en_Click" />
+                </div>
+
+              <div id="logo">
+                <a href="index.html">
+                  <img src="images/logoWhite.png" alt="Logo" />
+                </a>
+              </div> 
+             </div> 
+              <div id="mainMenubar">
+                <div class="pageContentSize">
+                <div id="menuBar">
+                  <ul>
+                        <li class="firstElement"><asp:HyperLink NavigateUrl="Default.aspx" runat="server" Text="<%$ Resources:Globalization, HplMenuHome %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, EventHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="Prices.aspx" runat="server" Text="<%$ Resources:Globalization, PricesHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, AboutSushiHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="Gallery.aspx" runat="server" Text="<%$ Resources:Globalization, GalleryHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, ContactHyperLink %>"></asp:HyperLink></li>
+                        <li><asp:HyperLink NavigateUrl="#" runat="server" Text="<%$ Resources:Globalization, JobHyperLink %>"></asp:HyperLink></li>               
+                  </ul>         
+                </div>
+                <div id="altMenuBar">
+                  <ul>
+                            <li class="firstElement">
+                              <a href="#">
+                                <img src="images/MenuIcon.png"/>
+                              </a>
+                            </li>                
+                        </ul>         
+                </div>  
+                    </div>    
+              </div>          
+            </div>        
+
+          <div class="socialeMediaBar">
+            <div class="pageContentSize">
+              <ul>
+                        <li class="firstElement">
+                          <a href="http://www.facebook.com/bsushi.dk" target="blank"><img src="images/fb.gif" /></a>
+                        </li>
+                        <li><a href="http://instagram.com/bsushihorsens" target="blank"><img src="images/insta.png" /></a></li>                
+                    </ul>                     
+            </div>          
+          </div>
+
+          <div id="mainContentContainer">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>      
+          </div>            
+
+          <div id="mainFooterContainer">
+            <div class="pageContentSize">
+              <div class="content-section-row">
+                <div class="content-section-row-twocolumns">
+                  <div class="content-section-row-twocolumns-column firstElement">
+                    <div class="content-section-row-twocolumns-item-left">
+                      <div class="openingHours">
+                        <h3>
+                            <asp:Literal runat="server" Text="<%$ Resources:Globalization, OpeningTextBox %>"></asp:Literal>
+                        </h3>
+                        <ul class="">
+                            <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, MondayOpeningTextBox %>"></asp:Literal>:</p><p><asp:Literal runat="server" Text="<%$ Resources:Globalization, MondayHoursOpeningTextBox %>"></asp:Literal></p></li>
+                            <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, TueThuOpeningTextBox %>"></asp:Literal>:</p><p>17.00</p></li>
+                            <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, FridayOpeningTextBox %>"></asp:Literal>:</p><p>15.00</p></li>
+                            <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, SaturdayOpeningTextBox %>"></asp:Literal>:</p><p>17.00</p></li>
+                            <li><p class="spacer"><asp:Literal runat="server" Text="<%$ Resources:Globalization, SunHolOpeningTextBox %>"></asp:Literal>:</p><p>17.00</p></li>
+                        </ul>
+                      </div>              
+                    </div>
+                  </div>  
+                  <div class="content-section-row-twocolumns-column">           
+                    <div class="content-section-row-twocolumns-item-right">
+                      <div class="openingHours">
+                        <h3>
+                            <asp:Literal runat="server" Text="<%$ Resources:Globalization, MasterPageContact %>"></asp:Literal>
+                        </h3>
+                        <ul class="">
+                          <li><p class="spacer">Smedegade 1</p></li>
+                          <li><p class="spacer">8700 Horsens</p></li>
+                          <li><p class="spacer">+45 75 613 700</p></li>
+                          <li><p class="spacer">bsushi@bsushi.dk</p></li>
+                          <li><p class="spacer">benedikte@bsushi.dk</p></li>
+                        </ul>
+                      </div>              
+                    </div>  
+                  </div>
+                  <div class="clearfix"></div>  
+                </div>              
+              </div>
+            </div>      
+          </div>
+        </div>     
+      </form>
+  </body>
+</html>

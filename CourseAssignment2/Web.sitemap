@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap enableLocalization="true" xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx" resourceKey="MenuBsushi">
+      <siteMapNode url="Events.aspx" resourceKey="MenuEvents" />
+      <siteMapNode url="Prices.aspx" resourceKey="MenuPrices" />
+      <siteMapNode url="AboutSushi.aspx" resourceKey="MenuAboutSushi" />
+      <siteMapNode url="Gallery.aspx" resourceKey="MenuGallery"/>
+      <siteMapNode url="Contact.aspx" resourceKey="MenuContact" />
+      <siteMapNode url="Job.aspx" resourceKey="MenuJob" />
+    </siteMapNode>
+</siteMap>
